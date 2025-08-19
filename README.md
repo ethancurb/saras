@@ -8,7 +8,9 @@ Startup Questionnaire:
 4) What equipment do you have access to? (open ended) OR (prefer to start with none)
 5) What are your goals (select all that apply)?
    Lose weight/Gain weight/lose fat/gain muscle/increase mobility stability/other(open ended)
+   
 6)Follow up for each item selected in question 5. (How much weight do you want to lose?)
+
 7)By when do you want to achieve these goals? (open ended)
 
 Output is recap of goals, including specifics of how much weight they want to gain/lose. 
