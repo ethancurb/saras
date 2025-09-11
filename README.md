@@ -1,8 +1,14 @@
-# AImp-FIT
+# Saras
 Repository for the development of the early-stage AI-infused fitness website/application. 
 
 Startup Questionnaire:
-1) Age/Height/Wieght/Gender
+1) Metrics:
+   - Age
+   - Body weight
+   - Height
+   - Sex
+   - Estimated body fat %
+   - Estimated activity level (lifestyle)
 2) On a scale from 1-10, how happy are you with your current fitness level? (1-10)
 3) How many days a week can you commit to training? (1-7)
 4) What equipment do you have access to? (open ended) OR (prefer to start with none)
