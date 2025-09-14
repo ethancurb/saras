@@ -21,3 +21,12 @@ Startup Questionnaire:
 
 Output is recap of goals, including specifics of how much weight they want to gain/lose. 
 User comfirms this is what they want.
+
+Future features:
+- Type of split (push pull, full body, will depend on # days to lift)
+- Specific goals? ("I want to learn to jump higher", "I want a tight 6 pack"))
+- Meals and macro tracking
+- Demos for each exercise (how to do a russian twist)
+- In-app market for equipment (copy TikTok shop or link to Amazon where we get % of sale for affiliate marketing or something like that)
+- Social media lean (community features)
+- Open chat with the coach (will need to put boundaries on the conversation)
