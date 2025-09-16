@@ -161,10 +161,7 @@ export function PricingSection() {
                       {/* Trust Indicators */}
                       <div className="text-center space-y-2 pt-4 border-t border-gray-200 dark:border-gray-700">
                         <p className="text-sm text-gray-600 dark:text-white">
-                          ✓ 14-day free trial • Cancel anytime
-                        </p>
-                        <p className="text-sm text-gray-600 dark:text-white">
-                          ✓ Money-back guarantee • No setup fees
+                          ✓ Cancel anytime • No Hidden fees
                         </p>
                       </div>
                     </CardContent>
@@ -194,7 +191,6 @@ export function PricingSection() {
             
             <div className="flex flex-wrap justify-center items-center space-x-8 text-sm text-gray-500 dark:text-white">
               <span>✓ Cancel anytime</span>
-              <span>✓ Price lock guarantee</span>
               <span>✓ Premium support</span>
             </div>
           </motion.div>

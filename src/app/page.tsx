@@ -107,9 +107,9 @@ function HeroSection() {
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
               <span className="block text-black dark:text-white">Where</span>
               <span className="block bg-gradient-to-r from-gray-800 to-black dark:from-gray-400 dark:to-gray-300 bg-clip-text text-transparent">
-                AI Meets
+                Cutting-Edge AI Technology
               </span>
-              <span className="block text-black dark:text-white">Premium Fitness</span>
+              <span className="block text-black dark:text-white">Meets Fitness</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 dark:text-white max-w-3xl mx-auto leading-relaxed">
@@ -131,6 +131,7 @@ function HeroSection() {
               className="group"
               icon={<ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />}
               iconPosition="right"
+              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Join SARAS
             </Button>
@@ -155,27 +156,9 @@ function HeroSection() {
             <p className="text-sm text-gray-500 dark:text-white mb-6">
               Trusted by elite fitness enthusiasts worldwide
             </p>
-            <div className="flex items-center justify-center space-x-8 opacity-60">
-              {/* Placeholder for logos */}
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="w-24 h-8 bg-black/20 dark:bg-white/20 rounded-lg" />
-              ))}
-            </div>
           </motion.div>
         </div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-      >
-        <div className="w-6 h-10 border-2 border-gray-400 dark:border-gray-600 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-black/40 dark:bg-white/40 rounded-full mt-2 animate-bounce" />
-        </div>
-      </motion.div>
     </section>
   );
 }

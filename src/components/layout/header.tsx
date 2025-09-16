@@ -88,7 +88,7 @@ export function Header() {
               className="group flex items-center space-x-3 transition-all duration-300"
             >
               {/* SARAS Logo - using your PNG files - even larger size */}
-              <div className="relative h-12 w-48 transition-all duration-300 group-hover:scale-105">
+              <div className="relative h-14 w-56 transition-all duration-300 group-hover:scale-105">
                 {/* Light mode logo (black text on white background) */}
                 <Image
                   src="/logo light.png?v=2"
@@ -122,7 +122,7 @@ export function Header() {
             <Button variant="ghost" size="sm">
               Sign In
             </Button>
-            <Button variant="accent" size="sm">
+            <Button variant="accent" size="sm" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
               Join SARAS
             </Button>
           </div>
@@ -173,7 +173,7 @@ export function Header() {
                 <Button variant="ghost" size="md" className="w-full">
                   Sign In
                 </Button>
-                <Button variant="accent" size="md" className="w-full">
+                <Button variant="accent" size="md" className="w-full" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
                   Join SARAS
                 </Button>
               </div>

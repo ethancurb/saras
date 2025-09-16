@@ -120,7 +120,7 @@ export function Footer() {
           <div className="lg:col-span-4 space-y-6">
             {/* Logo and brand */}
             <div className="flex justify-center lg:justify-start items-center">
-              <div className="relative h-12 w-48">
+              <div className="relative h-14 w-56">
                 {/* Light theme logo (visible in light mode) */}
                 <Image
                   src="/logo light.png?v=2"

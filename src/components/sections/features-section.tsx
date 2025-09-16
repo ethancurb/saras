@@ -234,6 +234,7 @@ export function FeaturesSection() {
                 className="group"
                 icon={<ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />}
                 iconPosition="right"
+                onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Start Your Transformation
               </Button>
