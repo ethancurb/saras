@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Saras - Luxury AI Fitness Companion
 
-## Getting Started
+**The Rolls Royce of Digital Fitness**
 
-First, run the development server:
+Saras is a premium AI fitness web application that delivers an elite, exclusive fitness experience. Built with cutting-edge technology and luxury design principles, Saras provides personalized AI-powered fitness coaching through the proprietary **Saras Engine**.
 
+## 🌟 Features
+
+- **Luxury Design**: Sleek, minimal, and futuristic interface with premium black/white/accent color palette
+- **AI-Powered Personalization**: Continuous adaptation and learning through the Saras Engine
+- **Elite Experience**: Status symbol fitness platform that goes beyond traditional fitness apps
+- **Responsive Design**: Seamless experience across all devices
+- **Modern Architecture**: Built with Next.js 15, React 18, and TypeScript
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 22.19.0 (use `.nvmrc` for exact version)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd saras
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+### Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run type-check` - Run TypeScript checking
+- `npm run format` - Format code with Prettier
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🏗️ Architecture
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Tech Stack
 
-## Deploy on Vercel
+- **Framework**: Next.js 15.5.3 with App Router
+- **Language**: TypeScript ^5.6
+- **Styling**: TailwindCSS ^3.4
+- **UI Components**: Radix UI primitives
+- **Icons**: Lucide React
+- **Animation**: Framer Motion
+- **Utilities**: class-variance-authority, tailwind-merge, clsx
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+├── app/                 # Next.js App Router pages
+├── components/          # Reusable components
+│   ├── ui/             # Basic UI components
+│   └── layout/         # Layout components
+├── lib/                # Utilities and configurations
+├── styles/             # Global styles and Tailwind extensions
+└── types/              # TypeScript type definitions
+```
+
+## 🎨 Design Philosophy
+
+Saras embodies luxury, exclusivity, and technological sophistication:
+
+- **Minimal & Clean**: Crisp typography and extremely clean UI
+- **Elite Experience**: Every interaction feels premium and refined
+- **Subtle Motion**: Smooth animations that feel effortless, not flashy
+- **Status Symbol**: The platform itself conveys prestige and exclusivity
+
+## 🤖 The Saras Engine
+
+Our proprietary AI system that powers personalized fitness experiences:
+
+- Continuous adaptation and learning
+- Personalized workouts and nutrition plans
+- 24/7 availability and guidance
+- Superior to traditional human-only coaching
+
+## 📱 Responsive Design
+
+Built mobile-first with luxury aesthetics maintained across:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (320px - 767px)
+
+## 🔧 Development
+
+### Code Style
+
+- Use Prettier for formatting
+- Follow ESLint rules
+- Write clean, commented code
+- Maintain TypeScript strict mode
+- Use semantic HTML and ARIA accessibility
+
+### Component Guidelines
+
+- Use Radix UI primitives for accessibility
+- Implement consistent design tokens
+- Follow atomic design principles
+- Write comprehensive JSDoc comments
+
+## 🚀 Deployment
+
+The application is optimized for Vercel deployment but can be deployed to any Node.js hosting platform.
+
+---
+
+**Saras** - Where AI meets luxury fitness. Join the exclusive experience.
