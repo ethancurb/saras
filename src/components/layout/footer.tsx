@@ -10,14 +10,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { 
   Instagram, 
-  Twitter, 
-  Linkedin, 
+  Facebook,
+  Youtube,
   Mail, 
-  MapPin, 
-  Phone, 
   ArrowUpRight 
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+
+// Custom TikTok icon component
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" className={className} fill="currentColor">
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43V7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.43z"/>
+  </svg>
+);
 
 // Footer link section configurations
 const footerSections = [
@@ -34,8 +39,6 @@ const footerSections = [
     title: 'Company',
     links: [
       { label: 'About', href: '#about' },
-      { label: 'Careers', href: '#careers' },
-      { label: 'Press', href: '#press' },
       { label: 'Contact', href: '#contact' },
     ],
   },
@@ -43,9 +46,7 @@ const footerSections = [
     title: 'Support',
     links: [
       { label: 'Help Center', href: '#help' },
-      { label: 'Community', href: '#community' },
       { label: 'Documentation', href: '#docs' },
-      { label: 'API', href: '#api' },
     ],
   },
   {
@@ -54,7 +55,6 @@ const footerSections = [
       { label: 'Privacy Policy', href: '#privacy' },
       { label: 'Terms of Service', href: '#terms' },
       { label: 'Cookie Policy', href: '#cookies' },
-      { label: 'GDPR', href: '#gdpr' },
     ],
   },
 ];
@@ -68,15 +68,21 @@ const socialLinks = [
     handle: '@sarasfitness'
   },
   { 
-    icon: Twitter, 
-    href: 'https://twitter.com', 
-    label: 'Twitter',
+    icon: Facebook, 
+    href: 'https://facebook.com', 
+    label: 'Facebook',
+    handle: 'SARAS AI Fitness'
+  },
+  { 
+    icon: TikTokIcon, 
+    href: 'https://tiktok.com', 
+    label: 'TikTok',
     handle: '@saras_ai'
   },
   { 
-    icon: Linkedin, 
-    href: 'https://linkedin.com', 
-    label: 'LinkedIn',
+    icon: Youtube, 
+    href: 'https://youtube.com', 
+    label: 'YouTube',
     handle: 'SARAS AI Fitness'
   },
 ];
@@ -88,18 +94,6 @@ const contactInfo = [
     label: 'Email',
     value: 'hello@saras.ai',
     href: 'mailto:hello@saras.ai',
-  },
-  {
-    icon: Phone,
-    label: 'Phone',
-    value: '+1 (555) 123-4567',
-    href: 'tel:+15551234567',
-  },
-  {
-    icon: MapPin,
-    label: 'Address',
-    value: 'San Francisco, CA',
-    href: '#',
   },
 ];
 
@@ -146,23 +140,6 @@ export function Footer() {
               Experience the future of fitness with SARAS - your personal AI companion 
               that adapts, learns, and evolves with you. Where sophistication meets intelligence.
             </p>
-
-            {/* Newsletter subscription */}
-            <div className="space-y-3 text-center lg:text-left">
-              <h4 className="text-lg font-semibold text-black dark:text-white">
-                Stay Updated
-              </h4>
-              <div className="flex space-x-2">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 bg-gray-100 dark:bg-gray-800 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 rounded-lg border border-gray-300 dark:border-gray-600 focus:border-black dark:focus:border-white focus:outline-none transition-colors duration-300"
-                />
-                <button className="px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors duration-300 font-medium">
-                  Subscribe
-                </button>
-              </div>
-            </div>
           </div>
 
           {/* Links sections */}

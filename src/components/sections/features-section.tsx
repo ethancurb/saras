@@ -34,14 +34,14 @@ const mainFeatures: FeatureItem[] = [
   {
     id: 'continuous-adaptation',
     title: 'Continuous Adaptation',
-    description: 'Unlike human trainers who see you weekly, SARAS learns from every workout, meal, and metric to refine your program in real-time.',
+    description: 'SARAS learns from every workout, recovery metric, and performance metric to refine your program in real time.',
     icon: TrendingUp,
     highlight: true,
   },
   {
     id: '24-7-availability',
     title: '24/7 Availability',
-    description: 'Your AI companion never sleeps. Get instant guidance, form corrections, and motivation whenever you need it, day or night.',
+    description: 'Your AI trainer never sleeps. Get instant guidance, workout generation, and advanced performance and recovery analysis, whenever you need it, day or night.',
     icon: Clock,
     highlight: true,
   },
@@ -89,7 +89,6 @@ export function FeaturesSection() {
             className="text-center space-y-6"
           >
             <div className="inline-flex items-center space-x-2 px-4 py-2 bg-black/10 dark:bg-white/10 rounded-full border border-black/20 dark:border-white/20">
-              <Sparkles className="w-4 h-4 text-gray-600 dark:text-white" />
               <span className="text-sm font-medium text-gray-700 dark:text-white">
                 The SARAS Advantage
               </span>
@@ -100,8 +99,8 @@ export function FeaturesSection() {
             </h2>
             
             <p className="text-xl text-gray-600 dark:text-white max-w-3xl mx-auto leading-relaxed">
-              Experience fitness coaching that transcends traditional boundaries. 
-              Where AI intelligence meets premium experience to deliver unprecedented personalization.
+              Experience fitness coaching that transcends traditional boundries. 
+              Where AI intelligence meets user-centric experience to deliver optimal training results.
             </p>
           </motion.div>
 

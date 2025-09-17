@@ -135,7 +135,7 @@ export default function RootLayout({
           <Header />
           
           {/* Main Content Area */}
-          <main className="flex-1 pt-20">
+          <main className="flex-1 pt-12">
             {children}
           </main>
           

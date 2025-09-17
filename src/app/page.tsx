@@ -90,7 +90,6 @@ function HeroSection() {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center space-x-2 px-4 py-2 bg-black/10 dark:bg-white/10 rounded-full border border-black/20 dark:border-white/20"
           >
-            <Sparkles className="w-4 h-4 text-gray-600 dark:text-white" />
             <span className="text-sm font-medium text-black dark:text-white">
               Introducing the SARAS Engine
             </span>
@@ -104,17 +103,17 @@ function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6"
           >
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
-              <span className="block text-black dark:text-white">Where</span>
-              <span className="block bg-gradient-to-r from-gray-800 to-black dark:from-gray-400 dark:to-gray-300 bg-clip-text text-transparent">
-                Cutting-Edge AI Technology
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-normal">
+              <span className="block text-black dark:text-white mb-2">Where</span>
+              <span className="block bg-gradient-to-r from-gray-800 to-black dark:from-gray-400 dark:to-gray-300 bg-clip-text text-transparent mb-2 pb-2">
+                Cutting-Edge AI
               </span>
               <span className="block text-black dark:text-white">Meets Fitness</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 dark:text-white max-w-3xl mx-auto leading-relaxed">
               Experience your personal AI fitness companion that knows you better than any human trainer could. 
-              Continuous adaptation. Intelligent personalization. Effortless sophistication.
+              Continuous adaptation. Intelligent personalization. Effortless optimization.
             </p>
           </motion.div>
 
@@ -146,17 +145,6 @@ function HeroSection() {
             </Button>
           </motion.div>
 
-          {/* Social proof */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="pt-8"
-          >
-            <p className="text-sm text-gray-500 dark:text-white mb-6">
-              Trusted by elite fitness enthusiasts worldwide
-            </p>
-          </motion.div>
         </div>
       </div>
     </section>
