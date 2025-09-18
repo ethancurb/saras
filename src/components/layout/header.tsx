@@ -71,11 +71,11 @@ export function Header() {
         'fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out',
         isScrolled
           ? 'bg-white/95 dark:bg-black/95 backdrop-blur-md border-b border-gray-200 dark:border-white/20 shadow-lg'
-          : 'bg-transparent'
+          : 'bg-white/80 dark:bg-black/80 backdrop-blur-sm'
       )}
     >
       <div className='container-premium'>
-        <nav className='flex items-center justify-between h-20'>
+        <nav className='flex items-center justify-between h-24 py-4'>
           {/* Logo and Brand */}
           <div className='flex items-center'>
             <Link
@@ -114,9 +114,11 @@ export function Header() {
           {/* CTA Buttons and Theme Toggle */}
           <div className='hidden md:flex items-center space-x-4'>
             <ThemeToggle />
-            <Button variant='ghost' size='sm'>
-              Sign In
-            </Button>
+            <Link href='/signin'>
+              <Button variant='ghost' size='sm'>
+                Sign In
+              </Button>
+            </Link>
             <Button
               variant='accent'
               size='sm'
@@ -173,9 +175,11 @@ export function Header() {
 
               {/* Mobile CTA Buttons */}
               <div className='flex flex-col space-y-3'>
-                <Button variant='ghost' size='md' className='w-full'>
-                  Sign In
-                </Button>
+                <Link href='/signin'>
+                  <Button variant='ghost' size='md' className='w-full'>
+                    Sign In
+                  </Button>
+                </Link>
                 <Button
                   variant='accent'
                   size='md'

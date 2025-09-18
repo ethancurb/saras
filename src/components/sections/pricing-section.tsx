@@ -169,6 +169,7 @@ export function PricingSection() {
                         variant='primary'
                         size='xl'
                         className='w-full text-lg py-4'
+                        onClick={() => window.location.href = '/onboarding'}
                       >
                         {plan.ctaText}
                       </Button>
